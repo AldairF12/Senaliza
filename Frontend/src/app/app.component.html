@@ -1,0 +1,16 @@
+<app-sidenav (usuarioDeslogeado)="habilitarLogearse()" *ngIf="guia==='logeado'" (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-body *ngIf="guia==='logeado'"
+    [collapsed]="isSideNavCollapsed"
+    [screenWidth]="screenWidth"
+></app-body>
+
+<app-log-in *ngIf="guia==='logearse'" (usuarioLogeado)="habilitarContenido()" (registrarse)="habilitarRegistrarse()" (landingPage)="habilitarLandingPage()"></app-log-in>
+<app-sign-up  *ngIf="guia==='registrarse'" (logearse)="habilitarLogearse()" (landingPage)="habilitarLandingPage()"></app-sign-up>
+<app-landing-page *ngIf="guia==='landing-page'" (logearse)="habilitarLogearse()" (registrarse)="habilitarRegistrarse()"></app-landing-page>
+
+
+<!-- 
+Sin landing page:
+<app-log-in *ngIf="guia==='logearse'" (usuarioLogeado)="habilitarContenido()" (registrarse)="habilitarRegistrarse()" ></app-log-in>
+<app-sign-up  *ngIf="guia==='registrarse'" (logearse)="habilitarLogearse()"></app-sign-up> 
+-->
