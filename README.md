@@ -1,27 +1,50 @@
 # 💻 Señaliza
 
-> Interactive web platform designed to support learning through structured lessons, user progress and administrative management.
+> Interactive web platform designed to support learning through structured lessons, user management and role-based administration.
 
 ---
 
 ## 📌 Overview
 
-**Señaliza** is a web platform developed as a team project to provide an interactive learning experience through structured lessons and user management.
+**Señaliza** is a full-stack web platform developed as a team project to provide an interactive learning environment.
 
-The platform includes different interfaces depending on the user's role, including student and administrator experiences.
+The system provides different experiences according to the user's role, including student and administrator interfaces.
+
+The project combines frontend development, backend services and database management into a single web application.
 
 ---
 
 ## 🎯 Objective
 
-The main objective of the platform is to provide a simple and accessible environment where users can:
+The platform aims to provide users with a simple and accessible environment to:
 
 - Access learning content
 - Navigate through available lessons
 - Manage their profile
 - Interact with learning resources
 
-Administrators can manage platform information and user-related entities.
+Administrators can manage students, lessons and other platform entities through a dedicated administration interface.
+
+---
+
+## ✨ Main Features
+
+### 👨‍🎓 Student
+
+- User registration and login
+- Profile management
+- Access to available lessons
+- Navigation between learning content
+- Interactive learning interface
+
+### 🛠️ Administrator
+
+- Administrative dashboard
+- Student management
+- Lesson management
+- Entity management
+- Create, edit and delete records
+- Centralized administration interface
 
 ---
 
@@ -31,101 +54,39 @@ This repository contains my implementation and improvements to the project.
 
 My main contributions include:
 
-- UI/UX design and implementation
+- UI/UX design
 - Frontend development
-- Student interface
-- Administrator interface
+- Student interface implementation
+- Administrator interface implementation
 - Navigation and page structure
-- Implementation of application views
-- Visual improvements and responsive design
+- Application views
+- Visual design and styling
+- Integration of frontend components with backend services
 
-> This project was developed collaboratively. The sections above describe my individual contribution.
-
----
-
-## ✨ Main Features
-
-### Student
-
-- Login
-- User registration
-- Profile management
-- Lesson navigation
-- Access to available learning content
-
-### Administrator
-
-- Administrative dashboard
-- Student management
-- Lesson management
-- Entity management
-- Platform administration
-
----
-
-## 🖥️ Interface
-
-### Login
-
-![Login](docs/screenshots/login.png)
-
-### Student Dashboard
-
-![Student Dashboard](docs/screenshots/student-dashboard.png)
-
-### Lessons
-
-![Lessons](docs/screenshots/lessons.png)
-
-### Administrator Dashboard
-
-![Admin Dashboard](docs/screenshots/admin-dashboard.png)
-
-### Student Management
-
-![Student Management](docs/screenshots/students-management.png)
-
----
-
-## 🎥 Demo
-
-### Quick Demo
-
-![Señaliza Demo](docs/demo.gif)
-
-> A short walkthrough of the main user flow.
-
-### Full Demo
-
-> TODO: Add YouTube/video link.
-
----
-
-## 🛠️ Technologies
-
-- Angular
-- TypeScript
-- HTML5
-- CSS3
-- JavaScript
-
-> TODO: Add backend/database technologies if included in this repository.
+> This project was developed collaboratively. The contribution section describes my individual work within the team.
 
 ---
 
 ## 🏗️ Architecture
 
-> TODO: Add architecture diagram.
-
-Recommended structure:
-
 ```text
-User
- ↓
-Angular Frontend
- ↓
-REST API
- ↓
-Backend
- ↓
-Database
+┌──────────────────────┐
+│        User          │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│   Angular Frontend   │
+└──────────┬───────────┘
+           │
+        REST API
+           │
+           ▼
+┌──────────────────────┐
+│    Backend API       │
+└──────────┬───────────┘
+           │
+           ▼
+┌──────────────────────┐
+│       Database       │
+└──────────────────────┘
